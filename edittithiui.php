@@ -7,8 +7,7 @@
     <title>ADD TITHI</title>
 </head>
 <body>
-    <h1>ADD TITHI RECORD</h1>
-    <form action="addtithi.php" method="post">
+    <form action="edittithi.php" method="post">
         <label for="month">Month:</label>
     <select id="month" name="month" required>
         <?php
@@ -38,8 +37,6 @@
     </select><br>
     <label for="day">Enter a Day (1-15) :
     <input type="text" id="day" name="day" pattern="[1-9]|1[0-5]" title="Day" required></label>
-    <label for="name">Name :</label>
-    <input type="text" name='name' id="name" placeholder="name" required>
     <input type="submit">
     </form>
 </body>

@@ -14,9 +14,9 @@ $date= $month."-".$period."-".$day;
 $sql="select * from tithidata where datefor='$date'";
 $result=$conn->query($sql);
 if($result->num_rows>0){
-    echo "<table><tr><td>Tithi</td><td>NAME</td></tr>";
+    echo "<table><tr><td>ID</td><td>DATE</td><td>NAME</td></tr>";
     while($row=$result->fetch_assoc()){
-        echo "<tr><td>".$row['datefor']."</td><td>".$row['name']."</td></tr>";
+        echo "<tr><td>".$row['id']."</td><td>".$row['datefor']."</td><td>".$row['name']."</td></tr>";
     }
     echo "</table><br><a href='index.php'><li>GO TO HOME PAGE</li></a>";
 }else{
