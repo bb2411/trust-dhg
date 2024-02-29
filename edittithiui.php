@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://classless.de/classless.css">
+<link rel="stylesheet" href="classless.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADD TITHI</title>
+    <title>EDIT TITHI</title>
 </head>
 <body>
+
     <form action="edittithi.php" method="post">
         <label for="month">Month:</label>
     <select id="month" name="month" required>
